@@ -283,6 +283,97 @@ footer {
   text-align: center;
 }
 
+/////////////////////////////////////////
+
+// meinside - for pagination
+.pagination {
+  margin: 10px;
+  text-align: center;
+}
+
+// meinside - for tag cloud and archives
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  text-align: justify; 
+  font-size: 16px;
+  li {
+    display: inline-block;
+    margin: 0 12px 12px 0; 
+  }
+}
+#archives {
+  padding: 5px;
+}
+.archive-group {
+  margin: 5px;
+  border-top: 1px solid #ddd;
+}
+.archive-item {
+  margin-left: 5px;
+}
+.post-tags {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// meinside - header background image
+.wrapper-masthead {
+/*   background: url('/images/layout/header.jpg') no-repeat center center fixed; */
+  background-size: cover;
+  background-color: $lightGray;
+
+  .masthead {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-bottom: none;
+
+/*    .site-name {
+      color: $white;
+    }
+
+    .site-description {
+      color: $lightGray;
+    }*/
+
+/*    nav > a {
+      color: $lightGray;
+    }*/
+  }
+}
+
+// meinside - date of post
+.index-post-date {
+  font-style: italic;
+  color: $gray;
+  text-align: right;
+}
+.post-date {
+  font-style: italic;
+  color: $gray;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
