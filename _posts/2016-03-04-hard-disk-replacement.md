@@ -1,4 +1,4 @@
----
+--
 layout: post
 title:  Linux and hard disk replacement
 categories:
@@ -30,7 +30,11 @@ And the following steps will be necessary:
 
         sudo dd if=/dev/sdb of=/dev/sda
 
-    This will clone all partitions and also MBR. Oh, and this can take a while... :wink:
+    or, if you have `pv` on your computer:
+
+        sudo pv < /dev/sdb > /dev/sda
+
+    The second option will display nice progress bar and is generally faster. These commands will clone all partitions and also MBR.
 
     > Note, that if your new disk is exactly of the same size and shape as the old one then there's
     > actually nothing more to do. Just reboot (and don't forget to remove USB stick).
