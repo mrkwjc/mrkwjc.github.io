@@ -1,6 +1,6 @@
---
+---
 layout: post
-title:  Linux and hard disk replacement
+title:  Hard disk replacement on Linux
 categories:
 - blog
 ---
